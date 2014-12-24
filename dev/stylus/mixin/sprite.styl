@@ -1,0 +1,32 @@
+$s-arr-b-blue = 190px 131px -190px -131px 46px 21px 256px 222px 'sprite.png';
+$s-arr-b = 123px 133px -123px -133px 46px 21px 256px 222px 'sprite.png';
+$s-arr-l = 36px 0px -36px 0px 36px 156px 256px 222px 'sprite.png';
+$s-arr-r = 0px 0px 0px 0px 36px 156px 256px 222px 'sprite.png';
+$s-bracket-l = 72px 67px -72px -67px 27px 60px 256px 222px 'sprite.png';
+$s-bracket-r = 68px 156px -68px -156px 27px 60px 256px 222px 'sprite.png';
+$s-dot-h = 241px 131px -241px -131px 10px 10px 256px 222px 'sprite.png';
+$s-dot = 236px 142px -236px -142px 10px 10px 256px 222px 'sprite.png';
+$s-ic1 = 190px 0px -190px 0px 66px 66px 256px 222px 'sprite.png';
+$s-ic2 = 0px 156px 0px -156px 68px 66px 256px 222px 'sprite.png';
+$s-ic3 = 190px 66px -190px -66px 66px 65px 256px 222px 'sprite.png';
+$s-ic4 = 123px 0px -123px 0px 67px 67px 256px 222px 'sprite.png';
+$s-ic5 = 123px 67px -123px -67px 66px 66px 256px 222px 'sprite.png';
+$s-ic6 = 72px 0px -72px 0px 51px 67px 256px 222px 'sprite.png';
+$s-sarr = 236px 131px -236px -131px 5px 11px 256px 222px 'sprite.png';
+
+spriteWidth($sprite)
+    width $sprite[4]
+
+spriteHeight($sprite)
+    height $sprite[5]
+
+spritePosition($sprite)
+    background-position $sprite[2] $sprite[3]
+
+spriteImage($sprite)
+    background-image url(../img/bg/$sprite[8])
+
+sprite($sprite)
+    spritePosition($sprite)
+    spriteWidth($sprite)
+    spriteHeight($sprite)

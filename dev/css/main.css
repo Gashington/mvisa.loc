@@ -1,0 +1,220 @@
+/*Переменные настройки*/
+/*Стилизация placeholder*/
+* {
+  box-sizing: border-box;
+  inline-box-align: align-content;
+}
+/*placeholder*/
+input::-webkit-input-placeholder,
+input::-moz-placeholder,
+input:-moz-placeholder,
+input:-ms-input-placeholder {
+  color: #fff !important;
+  text-indent: 0px;
+  -webkit-transition: text-indent 0.3s ease;
+          transition: text-indent 0.3s ease;
+}
+input::-webkit-input-placeholder:focus::-webkit-input-placeholder,
+input::-moz-placeholder:focus::-webkit-input-placeholder,
+input:-moz-placeholder:focus::-webkit-input-placeholder,
+input:-ms-input-placeholder:focus::-webkit-input-placeholder,
+input::-webkit-input-placeholder:focus ::-moz-placeholder,
+input::-moz-placeholder:focus ::-moz-placeholder,
+input:-moz-placeholder:focus ::-moz-placeholder,
+input:-ms-input-placeholder:focus ::-moz-placeholder,
+input::-webkit-input-placeholder:focus :-moz-placeholder,
+input::-moz-placeholder:focus :-moz-placeholder,
+input:-moz-placeholder:focus :-moz-placeholder,
+input:-ms-input-placeholder:focus :-moz-placeholder,
+input::-webkit-input-placeholder:focus :-ms-input-placeholder,
+input::-moz-placeholder:focus :-ms-input-placeholder,
+input:-moz-placeholder:focus :-ms-input-placeholder,
+input:-ms-input-placeholder:focus :-ms-input-placeholder {
+  text-indent: 500px;
+  -webkit-transition: text-indent 0.3s ease;
+          transition: text-indent 0.3s ease;
+}
+/*сброс стилей для списков*/
+.g-unstyled {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*Скрытие текста*/
+.g-replace-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+/* Иконки*/
+.g-icon {
+  display: block;
+  background-image: url("../img/bg/sprite.png");
+}
+.g-icon_arr-l {
+  background-position: -36px 0px;
+  width: 36px;
+}
+.g-icon_arr-r {
+  background-position: 0px 0px;
+  width: 36px;
+}
+.g-icon_arr-l,
+.g-icon_arr-r {
+  height: 78px;
+}
+.g-icon_arr-l:hover {
+  background-position: 0px -78px;
+}
+.g-icon_arr-r:hover {
+  background-position: -36px -78px;
+}
+.g-icon_dot {
+  background-position: -236px -142px;
+  width: 10px;
+  height: 10px;
+}
+.g-icon_dot:hover,
+.g-icon_dot.active {
+  background-position: -241px -131px;
+  width: ;
+  height: ;
+}
+.g-icon_ic1 {
+  background-position: -190px 0px;
+  width: 66px;
+  height: 66px;
+}
+.g-icon_ic2 {
+  background-position: 0px -156px;
+  width: 68px;
+  height: 66px;
+}
+.g-icon_ic3 {
+  background-position: -190px -66px;
+  width: 66px;
+  height: 65px;
+}
+.g-icon_ic4 {
+  background-position: -123px 0px;
+  width: 67px;
+  height: 67px;
+}
+.g-icon_ic5 {
+  background-position: -123px -67px;
+  width: 66px;
+  height: 66px;
+}
+.g-icon_ic6 {
+  background-position: -72px 0px;
+  width: 51px;
+  height: 67px;
+/*Футер к низу страницы*/
+}
+html,
+body {
+  height: 100%;
+  font: normal 16px 'PT Sans Narrow';
+}
+.g-wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -125px;
+}
+.g-footer-push {
+  height: 125px;
+}
+.b-footer {
+  height: 125px;
+}
+.b-body {
+  background: url("/img/bg/gplaypattern.png");
+}
+.g-container {
+  width: 980px;
+  margin: 0 auto;
+  outline: 1px solid #f00;
+}
+.g-title {
+  margin: 0 0 44px 0;
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.g-title_arrow {
+  margin: 0 0 24px 0;
+}
+.g-title_arrow:after {
+  content: '';
+  display: block;
+  margin: 12px auto 0;
+  background-image: url("../img/bg/sprite.png");
+  background-position: -123px -133px;
+  width: 46px;
+  height: 21px;
+}
+.g-title_blue {
+  color: #71c3df;
+}
+.g-btn {
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  color: #fff;
+  font-size: 23px;
+  font-weight: bold;
+  line-height: 60px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.g-btn:before,
+.g-btn:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  background-image: url("../img/bg/sprite.png");
+}
+.g-btn:before {
+  left: 0;
+  background-position: -72px -67px;
+  width: 27px;
+  height: 60px;
+}
+.g-btn:after {
+  right: 0;
+  background-position: -68px -156px;
+  width: 27px;
+  height: 60px;
+}
+.g-btn:hover,
+.g-btn:active {
+  background: #fff;
+  color: #ffba00;
+}
+.g-btn_white {
+  padding: 0 17px;
+}
+.g-btn_white:before {
+  background-position: -72px -67px;
+  width: 27px;
+  height: 60px;
+}
+.g-btn_white:after {
+  background-position: -68px -156px;
+  width: 27px;
+  height: 60px;
+}
+.g-btn_swhite {
+  padding: 0 22px;
+}
+.g-btn_blue {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+}

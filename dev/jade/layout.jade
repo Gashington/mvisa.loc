@@ -1,0 +1,75 @@
+doctype
+html.no-js
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        title
+        meta(name='description', content='')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        link(href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css')
+        link(href='http://fonts.googleapis.com/css?family=PT+Sans:400italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css')
+        link(href='/css/normalize.css', rel='stylesheet')
+        link(href='/css/jquery.formstyler.css', rel='stylesheet')
+        link(href='/css/fancybox.css', rel='stylesheet')
+        link(href='/css/main.css', rel='stylesheet')
+        link(href='/css/widgets.css', rel='stylesheet')
+        script(src='/js/vendor/modernizr-2.7.1.min.js')
+    body.b-body
+        <!--[if lt IE 8]>
+        p.browsehappy
+            | You are using an <strong>outdated</strong> browser.
+            | Please <a href="http://browsehappy.com/">upgrade your browser</a>
+            | to improve your experience.
+        <![endif]-->
+        .g-wrapper
+            header.b-header
+                .g-container
+                    .b-header__item.b-header__item_1
+                        .b-logo
+                            img.b-logo__img(src='/img/logo.png' alt='MVISA | На главную')
+                            span.g-replace-text mvisa
+                    .b-header__item.b-header__item_2
+                        .b-slogan Оперативное оформление однократных <br/>и многократных виз в более чем ХХ стран мира
+                    .b-header__item.b-header__item_3
+                        .b-contacts
+                            .b-contacts__item
+                                span.b-phone +375 (17)
+                                    span.b-phone_bold  569-36-17
+                            .b-contacts__item
+                                span.b-phone +375 (29)
+                                    span.b-phone_bold  648-53-13
+                            .b-contacts__item
+                                span.b-worktime Пн-Пт с 9.00 до 21.00
+                    .b-header__item.b-header__item_4
+                        a.g-btn.g-btn_white(href='/') заказать звонок
+            include ./includes/mainnav.jade
+            main.b-main
+                block main
+            .g-footer-push
+        footer.b-footer
+            .g-container
+                .b-footer-item.b-footer-item_1
+                    .b-logo
+                        img.b-logo__img(src='/img/logo-s.png' alt='MVISA | На главную')
+                        span.g-replace-text mvisa
+                .b-footer-item.b-footer-item_2
+                    .b-copyrgt ЧТУП “Страны мира”  РБ г. Минск, ул. Шафаранянская дом 18, оф.7
+                .b-footer-item.b-footer-item_3
+                    .b-contacts
+                        .b-contacts__item
+                            span.b-phone +375 (17)
+                                span.b-phone_bold  569-36-17
+                        .b-contacts__item
+                            span.b-phone +375 (29)
+                                span.b-phone_bold  648-53-13
+                        .b-contacts__item
+                            span.b-worktime Пн-Пт с 9.00 до 21.00
+    script(src="/js/vendor/jquery-1.11.1.js")
+    script(src="/js/vendor/fancybox.js")
+    script(src="/js/vendor/jquery.formstyler.js")
+    script(src="/js/main.js")
+    script(src="/js/plugins.js")
+    //[if lt IE 10]
+    script (src="/js/vendor/jquery-placeholder.js")
+    //[endif]
+
