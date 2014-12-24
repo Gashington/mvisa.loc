@@ -1,0 +1,16 @@
+extends ./layout.jade
+
+block main
+    .b-main-item
+        include ./includes/slider.jade
+    .b-main-item
+        - var decor = true
+        include ./includes/whyus.jade
+    .b-main-item
+        include ./includes/condition.jade
+    .b-main-item
+        include ./includes/worksteps.jade
+    .b-main-item
+        include ./includes/reviews.jade
+    .b-main-item
+        include ./includes/contacts.jade
