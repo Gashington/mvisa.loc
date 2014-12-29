@@ -1,23 +1,26 @@
 .b-slider
     .g-container
         .b-slider__inner
-            .b-slider__spinner.b-slider__spinner_left.g-icon.g-icon_arr-l
-            .b-slider__spinner.b-slider__spinner_right.g-icon.g-icon_arr-r
+            .b-slider__spinner.b-slider__spinner_left.g-icon.g-icon_arr-l.js-slider__prev
+            .b-slider__spinner.b-slider__spinner_right.g-icon.g-icon_arr-r.js-slider__next
             .b-slider__list
                 .b-slide
-                    h3.b-slide__title ОДНОКРАТНАЯ ВИЗА В ЛИТВУ
-                    h4.b-slide__title.b-slide__title_sub ВСЕГО ЗА 10$
-                    article.b-slide__text Выбирая нас Вы получаете самый лучший и качественный сервис по самым низким ценам.Самые быстрые однокрвтные и многокрвтные визы во многие страны
+                    .b-slide__wrap
+                        h3.b-slide__title ОДНОКРАТНАЯ ВИЗА В ЛИТВУ
+                        h4.b-slide__title.b-slide__title_sub ВСЕГО ЗА 10$
+                        article.b-slide__text Выбирая нас Вы получаете самый лучший и качественный сервис по самым низким ценам.Самые быстрые однокрвтные и многокрвтные визы во многие страны
                 .b-slide
-                    h3.b-slide__title ОДНОКРАТНАЯ ВИЗА В ЛИТВУ
-                    h4.b-slide__title.b-slide__title_sub ВСЕГО ЗА 10$
-                    article.b-slide__text Выбирая нас Вы получаете самый лучший и качественный сервис по самым низким ценам.Самые быстрые однокрвтные и многокрвтные визы во многие страны
+                    .b-slide__wrap
+                        h3.b-slide__title ОДНОКРАТНАЯ ВИЗА В ЛИТВУ
+                        h4.b-slide__title.b-slide__title_sub ВСЕГО ЗА 10$
+                        article.b-slide__text Выбирая нас Вы получаете самый лучший и качественный сервис по самым низким ценам.Самые быстрые однокрвтные и многокрвтные визы во многие страны
                 .b-slide
-                    h3.b-slide__title ОДНОКРАТНАЯ ВИЗА В ЛИТВУ
-                    h4.b-slide__title.b-slide__title_sub ВСЕГО ЗА 10$
-                    article.b-slide__text Выбирая нас Вы получаете самый лучший и качественный сервис по самым низким ценам.Самые быстрые однокрвтные и многокрвтные визы во многие страны
+                    .b-slide__wrap
+                        h3.b-slide__title ОДНОКРАТНАЯ ВИЗА В ЛИТВУ
+                        h4.b-slide__title.b-slide__title_sub ВСЕГО ЗА 10$
+                        article.b-slide__text Выбирая нас Вы получаете самый лучший и качественный сервис по самым низким ценам.Самые быстрые однокрвтные и многокрвтные визы во многие страны
 
-            ul.b-slider__control.g-unstyled
+            ul.b-slider__control.g-unstyled.js-slider__pager
                 li.b-slider__control-item
                     i.g-icon.g-icon_dot
                 li.b-slider__control-item
@@ -28,3 +31,15 @@
                     i.g-icon.g-icon_dot
 
 
+
+$('.b-slider__list').bxSlider({
+nextSelector: $('.js-slider__next'),
+    nextText: '',
+prevSelector: $('.js-slider__prev'),
+prevText: '',
+pagerSelector: $('.js-slider__pager'),
+useCSS: false,
+responsive: false,
+easing: 'linear',
+//auto: true
+})
