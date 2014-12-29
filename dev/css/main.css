@@ -54,11 +54,11 @@ input:-ms-input-placeholder:focus :-ms-input-placeholder {
   background-image: url("../img/bg/sprite.png");
 }
 .g-icon_arr-l {
-  background-position: -36px 0px;
+  background-position: 0px 0px;
   width: 36px;
 }
 .g-icon_arr-r {
-  background-position: 0px 0px;
+  background-position: -36px 0px;
   width: 36px;
 }
 .g-icon_arr-l,
@@ -72,43 +72,43 @@ input:-ms-input-placeholder:focus :-ms-input-placeholder {
   background-position: -36px -78px;
 }
 .g-icon_dot {
-  background-position: -236px -142px;
+  background-position: -277px -142px;
   width: 10px;
   height: 10px;
 }
 .g-icon_dot:hover,
 .g-icon_dot.active {
-  background-position: -241px -131px;
+  background-position: -277px -152px;
   width: ;
   height: ;
 }
 .g-icon_ic1 {
-  background-position: -190px 0px;
+  background-position: -133px -156px;
   width: 66px;
   height: 66px;
 }
 .g-icon_ic2 {
-  background-position: 0px -156px;
+  background-position: -223px 0px;
   width: 68px;
   height: 66px;
 }
 .g-icon_ic3 {
-  background-position: -190px -66px;
+  background-position: -223px -66px;
   width: 66px;
   height: 65px;
 }
 .g-icon_ic4 {
-  background-position: -123px 0px;
+  background-position: 0px -156px;
   width: 67px;
   height: 67px;
 }
 .g-icon_ic5 {
-  background-position: -123px -67px;
+  background-position: -67px -156px;
   width: 66px;
   height: 66px;
 }
 .g-icon_ic6 {
-  background-position: -72px 0px;
+  background-position: -172px 0px;
   width: 51px;
   height: 67px;
 /*Футер к низу страницы*/
@@ -148,19 +148,24 @@ body {
   text-transform: uppercase;
 }
 .g-title_arrow {
-  margin: 0 0 24px 0;
+  margin: 0 0 23px 0;
 }
 .g-title_arrow:after {
   content: '';
   display: block;
-  margin: 12px auto 0;
+  margin: 8px auto 0;
   background-image: url("../img/bg/sprite.png");
-  background-position: -123px -133px;
+  background-position: -172px -128px;
   width: 46px;
   height: 21px;
 }
 .g-title_blue {
   color: #71c3df;
+}
+.g-title_arrow.g-title_blue:after {
+  background-position: -223px -191px;
+  width: 46px;
+  height: 21px;
 }
 .g-btn {
   position: relative;
@@ -182,13 +187,13 @@ body {
 }
 .g-btn:before {
   left: 0;
-  background-position: -72px -67px;
+  background-position: -250px -131px;
   width: 27px;
   height: 60px;
 }
 .g-btn:after {
   right: 0;
-  background-position: -68px -156px;
+  background-position: -223px -131px;
   width: 27px;
   height: 60px;
 }
@@ -201,12 +206,12 @@ body {
   padding: 0 17px;
 }
 .g-btn_white:before {
-  background-position: -72px -67px;
+  background-position: -250px -131px;
   width: 27px;
   height: 60px;
 }
 .g-btn_white:after {
-  background-position: -68px -156px;
+  background-position: -223px -131px;
   width: 27px;
   height: 60px;
 }
@@ -217,4 +222,54 @@ body {
   width: 100%;
   height: 100px;
   line-height: 100px;
+}
+.g-btn_long {
+  height: 40px;
+  padding: 0 45px;
+  color: #7c7c7c;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 40px;
+}
+.g-btn_long:before {
+  background-position: -172px -67px;
+  width: 19px;
+  height: 40px;
+}
+.g-btn_long:after {
+  background-position: -191px -67px;
+  width: 20px;
+  height: 39px;
+}
+.g-btn_long:hover,
+.g-btn_long:active {
+  background: none;
+  color: #71c3df;
+}
+.g-btn_hblue {
+  width: 100%;
+  height: 100px;
+  color: #ffc62e;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 100px;
+  text-align: center;
+  text-decoration: underline;
+}
+.g-btn_hblue:before {
+  background-position: -72px 0px;
+  width: 50px;
+  height: 100px;
+}
+.g-btn_hblue:after {
+  background-position: -122px 0px;
+  width: 50px;
+  height: 100px;
+}
+.g-btn_hblue:hover,
+.g-btn_hblue:active {
+  background: none;
+  color: #ffc62e;
+  text-decoration: none;
 }

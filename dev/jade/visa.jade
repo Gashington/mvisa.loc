@@ -1,0 +1,107 @@
+extends ./layout.jade
+block main
+    .b-main-item
+        .b-visa
+            .g-container
+                h3.g-title.g-title_blue Виза в литву
+                .b-visa__wrap
+                    .b-visa__img-wrap
+                        img.b-visa__img(src='./img/uploads/visa.jpg')
+                    .b-visa__form
+                        .b-form.b-form_nopd
+                            .b-form__wrap
+                                form.b-form__form#js-visaform
+                                    h3.b-form__title.b-form__title_small оставить заявку на оформление визы
+                                    .b-form__group
+                                        label.b-form__label(for='name') Ваше имя
+                                        input.b-form__itext(id='name', type='text', name='name')
+                                    .b-form__group
+                                        label.b-form__label(for='phone') Ваш телефон:
+                                        input.b-form__itext(id='phone', type='text', name='phone')
+                                    .b-form__group
+                                        .b-form__group.b-form__group_inner
+                                            label.b-form__label.b-form__label_inline(for='single') Однократная:
+                                                input.b-form__iradio.js-radio(id='single', type='radio', name='group' value='single')
+                                        .b-form__group.b-form__group_inner
+                                            label.b-form__label.b-form__label_inline(for='reusable') Многократная:
+                                                input.b-form__iradio.js-radio(id='reusable', type='radio', name='group' value='reusable')
+                                    .b-form__group
+                                        .b-form__group.b-form__group_inner
+                                            label.b-form__label(for='count') Колличество персон:
+                                        .b-form__group.b-form__group_inner.js-count-module
+                                            span.b-form__spiner.b-form__spiner_left.js-spiner.js-plus -
+                                            input.b-form__itext.b-form__itext_inline(id='count', type='text', name='count', value='1')
+                                            span.b-form__spiner.b-form__spiner_right.js-spiner.js-plus +
+                                    .b-form__group.b-form__group_btns
+                                        input.b-form__send(type='submit', value='Заказать')
+                .b-visa__tabs
+                    .b-tabs.js-tabs
+                        ul.b-tabs__list.g-unstyled
+                            li.b-tabs__item
+                                a.b-tabs__link.js-tab-link(href='#js-tab-1') однократная
+                            li.b-tabs__item
+                                a.b-tabs__link(href='#js-tab-2') многократная
+                            li.b-tabs__item
+                                a.b-tabs__link.b-tabs__link_action.js-tab-link(href='#js-tab-3') АКЦИЯ!
+                            li.b-tabs__item
+                                a.b-tabs__link.js-tab-link(href='#js-tab-4') дополнительно
+                            li.b-tabs__item
+                                a.b-tabs__link.js-tab-link(href='#js-tab-5') подробности
+                        #js-tab-1.b-tabs__tab
+                            .b-tabs__inline.b-tabs__inline_left
+                                ul.b-condition__list.g-unstyled
+                                    li.b-condition-list__item.b-condition-list__item_big
+                                        span.b-condition-list__text.b-condition-list__text_left.b-condition-list__text_left_big Срок пребывания
+                                        span.b-condition-list__text.b-condition-list__text_right.b-condition-list__text_right_big 10 дней
+                                    li.b-condition-list__item.b-condition-list__item_big
+                                        span.b-condition-list__text.b-condition-list__text_left.b-condition-list__text_left_big  Срок оформления
+                                        span.b-condition-list__text.b-condition-list__text_right.b-condition-list__text_right_big  до 20 дней
+                                    li.b-condition-list__item.b-condition-list__item_big
+                                        span.b-condition-list__text.b-condition-list__text_left.b-condition-list__text_left_big Подача документов
+                                        span.b-condition-list__text.b-condition-list__text_right.b-condition-list__text_right_big личная
+                                    li.b-condition-list__item.b-condition-list__item_big
+                                        span.b-condition-list__text.b-condition-list__text_left.b-condition-list__text_left_big Стоимость
+                                        span.b-condition-list__text.b-condition-list__text_right.b-condition-list__text_right_big 100 у.е
+                            .b-tabs__inline.b-tabs__inline_right
+                                h4.b-tabs__title Однократные визы
+                                p.b-tabs__text Однократные визы дают право посетить страну лишь единожды, а по прошествии срока — в обязательном порядке вернуться на родину. Однократная виза делится на два подвида: краткосрочная и долгосрочная. Они отличаются друг от друга лишь временем пребывания в стране. Так, краткосрочные визы позволят Вам перемещаться по иностранному государству в течение 1 месяца. Минимальный срок — 3-7 дней.
+                        #js-tab-2.b-tabs__tab
+                            .b-tabs__inline.b-tabs__inline_left
+                                ul.b-condition__list.g-unstyled
+                                    li.b-condition-list__item.b-condition-list__item_big
+                                        span.b-condition-list__text.b-condition-list__text_left.b-condition-list__text_left_big Срок пребывания
+                                        span.b-condition-list__text.b-condition-list__text_right.b-condition-list__text_right_big 10 дней
+                                    li.b-condition-list__item.b-condition-list__item_big
+                                        span.b-condition-list__text.b-condition-list__text_left.b-condition-list__text_left_big  Срок оформления
+                                        span.b-condition-list__text.b-condition-list__text_right.b-condition-list__text_right_big  до 20 дней
+                                    li.b-condition-list__item.b-condition-list__item_big
+                                        span.b-condition-list__text.b-condition-list__text_left.b-condition-list__text_left_big Подача документов
+                                        span.b-condition-list__text.b-condition-list__text_right.b-condition-list__text_right_big личная
+                                    li.b-condition-list__item.b-condition-list__item_big
+                                        span.b-condition-list__text.b-condition-list__text_left.b-condition-list__text_left_big Стоимость
+                                        span.b-condition-list__text.b-condition-list__text_right.b-condition-list__text_right_big 100 у.е
+                            .b-tabs__inline.b-tabs__inline_right
+                                h4.b-tabs__title Однократные визы
+                                p.b-tabs__text Однократные визы дают право посетить страну лишь единожды, а по прошествии срока — в обязательном порядке вернуться на родину. Однократная виза делится на два подвида: краткосрочная и долгосрочная. Они отличаются друг от друга лишь временем пребывания в стране. Так, краткосрочные визы позволят Вам перемещаться по иностранному государству в течение 1 месяца. Минимальный срок — 3-7 дней.
+                        #js-tab-3.b-tabs__tab
+                            .b-tabs__inline
+                                h4.b-tabs__title Однократные визы
+                                p.b-tabs__text Однократные визы дают право посетить страну лишь единожды, а по прошествии срока — в обязательном порядке вернуться на родину. Однократная виза делится на два подвида: краткосрочная и долгосрочная. Они отличаются друг от друга лишь временем пребывания в стране. Так, краткосрочные визы позволят Вам перемещаться по иностранному государству в течение 1 месяца. Минимальный срок — 3-7 дней.
+                        #js-tab-4.b-tabs__tab
+                            .b-tabs__inline
+                                h4.b-tabs__title Однократные визы
+                                p.b-tabs__text Однократные визы дают право посетить страну лишь единожды, а по прошествии срока — в обязательном порядке вернуться на родину. Однократная виза делится на два подвида: краткосрочная и долгосрочная. Они отличаются друг от друга лишь временем пребывания в стране. Так, краткосрочные визы позволят Вам перемещаться по иностранному государству в течение 1 месяца. Минимальный срок — 3-7 дней.
+                        #js-tab-5.b-tabs__tab
+                            .b-tabs__inline
+                                h4.b-tabs__title Однократные визы
+                                p.b-tabs__text Однократные визы дают право посетить страну лишь единожды, а по прошествии срока — в обязательном порядке вернуться на родину. Однократная виза делится на два подвида: краткосрочная и долгосрочная. Они отличаются друг от друга лишь временем пребывания в стране. Так, краткосрочные визы позволят Вам перемещаться по иностранному государству в течение 1 месяца. Минимальный срок — 3-7 дней.
+    .b-main-item
+        include ./includes/whyus.jade
+    .b-main-item
+        include ./includes/worksteps.jade
+    .b-main-item
+        include ./includes/reviews.jade
+    .b-main-item
+        include ./includes/contacts.jade
+    .b-main-item
+        include ./includes/seotext.jade

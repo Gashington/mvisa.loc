@@ -13,13 +13,13 @@
   display inline-block
   vertical-align top
 .b-header__item_1
-  margin 0 45px 0 0
+  margin 0 49px 0 0
 .b-header__item_2
-  margin 25px 66px 0 0
+  margin 23px 74px 0 0
 .b-header__item_3
-  margin 17px 30px 0 0
+  margin 13px 30px 0 0
 .b-header__item_4
-  margin 17px 0 0 0
+  margin 15px 0 0 0
 
 /*блок b-slogan*/
 .b-slogan
@@ -47,7 +47,9 @@
 .b-footer-item_1
   margin 0 200px 0 0
 .b-footer-item_2
-  margin 27px 168px 0 0
+  margin 27px 172px 0 0
+.b-footer-item_3
+  margin 4px 0 0 0
   /*блок copyrgt*/
 .b-copyrgt
   color #ffffff
@@ -74,7 +76,7 @@
 .b-mainnaw__link
   display table-cell
   width 122px
-  height 57px
+  height 60px
   padding 0 15px
   border-top 4px solid white
   vertical-align middle
@@ -94,11 +96,10 @@
 
 /*блок слайдера*/
 .b-slider
-  min-height 400px
   background url("../img/bg/slider-bg.png")
 .b-slider__inner
   position relative
-  min-height 400px
+  min-height 398px
 .b-slider__spinner
   position absolute
   top 160px
@@ -120,10 +121,19 @@
   cursor pointer
   &:first-child
     margin 0
-
-    /*Блок слайда*/
-.b-slide
+.b-slider__wrap
   padding 125px 211px
+    /*Блок слайда*/
+.b-slider__list
+  position relative
+  height 100%
+  padding 10px 125px 80px
+  overflow hidden
+.b-slide
+  position absolute
+  left 100%
+  width 100%
+  height 100%
   text-align center
   vertical-align middle
 .b-slide__title
@@ -154,7 +164,7 @@
   bottom -7px
   background url("../img/bg/decor-bottom.png") repeat-x
 .b-whyus__wrap
-  padding 44px 0 0 0
+  padding 33px 0 0 0
 .b-whyus__list
   margin 0 0 0 -43px
   font-size 0
@@ -163,7 +173,7 @@
   display inline-block
   width 298px
   margin 0 0 45px 43px
-  padding 10px 5px 10px 84px
+  padding 6px 5px 14px 84px
   border 4px solid #a7d8ec
 .b-option__icon
   position absolute
@@ -180,7 +190,7 @@
 
 /*блок условия и тарифы на шенген*/
 .b-condition
-  background #0b97c4
+  background #71c3df
 .b-condition__bg
   padding 42px 0 0 0
   min-height 1115px
@@ -191,7 +201,7 @@
     margin 0
 .b-condition__table
   width 100%
-  background #0b97c4
+  background #71c3df
   color #ffffff
   text-align center
 .b-condition__country
@@ -208,6 +218,10 @@
   clearfix()
   display block
   width 100%
+.b-condition-list__item_big
+  margin 23px 0 0 0
+  &:first-child
+    margin 0
 .b-condition-list__text_left
   float left
   color white
@@ -218,9 +232,21 @@
     margin 0 6px 0 0
     spriteImage($s-sarr)
     sprite($s-sarr)
+
 .b-condition-list__text_right
   float right
-
+.b-condition-list__text_left_big
+  color #474747
+  font-size 20px
+  font-weight normal
+  text-transform uppercase
+  &:before
+    display none
+.b-condition-list__text_right_big
+  color #71c3df
+  font-size 20px
+  font-weight bold
+  text-transform uppercase
   /*блок таблиц*/
 .b-table__title
   padding 15px 0
@@ -243,15 +269,21 @@
   color #ffffff
   &:first-child
     border none
+.b-table__row_color
+  .b-table__td
+    background #48aacf
+  .b-table__td_nb
+    background none
 .b-table__td
   padding 5px
   border 2px solid #ffffff
 .b-table__td_nb
   border none
+  background none
 
 /*блок worksteps*/
 .b-worksteps
-  padding 43px 0  0 0
+  padding 39px 0  0 0
   background url("../img/bg/worksteps_bg.jpg")
   background-size cover
 .b-worksteps__list
@@ -260,7 +292,7 @@
   display inline-block
   vertical-align top
   width 33%
-  padding 0 10px 50px
+  padding 0 10px 42px
   text-align center
 .b-worksteps__img
   margin 0 0 10px 0
@@ -276,23 +308,26 @@
 .b-reviews
   padding 43px 0 45px 0
 .b-reviews__wrap
-  width 845px
+  width 840px
   margin 0 auto
 .b-review
-  margin 40px 0 0 0
+  margin 50px 0 0 0
   font-size 0
   &:first-child
     margin 0
-.b-review__img
+.b-review__img-wrap
 .b-review__wrap
   display inline-block
   vertical-align top
-.b-review__img
+.b-review__img-wrap
+  width 99px
   margin 0 49px 0 0
-.b-review__img_right
+.b-review__img
+  max-width 99px
+.b-review__img-wrap_right
   margin 0 0 0 49px
 .b-review__wrap
-  width 690px
+  width 689px
 .b-review__text
   padding 10px 0 0 0
   font italic 16px 'PT Sans'
@@ -312,6 +347,8 @@
 .b-requisites__inner
   display inline-block
   vertical-align top
+.b-requisites__inner
+  width 447px
 .b-requisites__map
   width 491px
   height 214px
@@ -321,11 +358,11 @@
 .b-requisites__item
   display inline-block
   vertical-align top
-  margin 0 0 0 35px
+  margin 0 0 0 40px
   &:first-child
     margin 0
 .b-requisites__title
-  margin 0 0 9px 0
+  margin 0
   color #71c3df
   font-size 16px
   font-weight bold
@@ -339,15 +376,23 @@
 .b-requisites__worktime
   color #666
   font-size 16px
-
+.b-requisites__item-wrap
+  margin 0 0 28px 0
 /*блок форм*/
 .b-form
   display inline-block
+  width 100%
   padding 55px 105px
   background url("../img/bg/cloud-bg.png") no-repeat
+.b-form_nopd
+  padding 0
+  .b-form__wrap
+  .b-form__group
+    padding 0
 .b-form__wrap
   position relative
-  width 530px
+  width 100%
+  max-width 530px
   padding 36px 0
   background url("../img/bg/gplaypattern.png")
 .b-form__plane
@@ -364,12 +409,15 @@
   font-size 28px
   text-transform uppercase
   text-align center
+.b-form__title_small
+  font-size 24px
 .b-form__group
   padding 0 40px
 .b-form__label
   display block
   margin 0 0 4px 0
   color #474747
+  font-size 16px
 .b-form__label_inline
   display inline-block
   margin 0 15px 0 0
@@ -392,6 +440,8 @@
   text-align center
 .b-form__group
   margin 8px 0 0 0
+  &::selection
+    background  transparent
 .b-form__group_inner
   display inline-block
   margin  0 0  0 26px
@@ -418,7 +468,180 @@
   font italic 30px 'PT Sans'
   line-height 30px
   cursor pointer
+  &::selection
+    background  transparent
 .b-form__spiner_left
   margin  0 10px 0 0
 .b-form__spiner_right
   margin  0 0 0 10px
+.error
+  color #ff0000
+/*блок новости*/
+.b-news
+  padding 36px 0
+.b-news__item
+  margin 36px 0 0 0
+  font-size 0
+  &:first-child
+    margin 0
+.b-news__img-wrap
+.b-news__wrap
+  display inline-block
+.b-news__wrap
+  width 630px
+.b-news__img-wrap
+  width 300px
+  margin-right 40px
+  padding 5px
+.b-news__title
+  margin 0
+  color #71c3df
+  font-size 18px
+  font-weight bold
+  text-transform uppercase
+.b-news__date
+  color #ffc62e
+  font-size 15px
+.b-news__teaser
+  margin 15px 0
+  color #474747
+  font-size 15px
+
+  /*Пагинация*/
+.b-pagination
+  padding 36px 0 0 0
+.b-pagination__list
+  font-size 0
+  text-align center
+.b-pagination__item
+  display inline-block
+  padding 0 8px
+  font-size 15px
+.b-pagination__link
+  color #7c7c7c
+  text-transform uppercase
+  text-decoration none
+.b-pagination__item
+  &:hover
+  &.active
+    .b-pagination__link
+      color #71c3df
+
+/*блок заказа визы b-visa*/
+.b-visa
+  padding 40px 0 0 0
+.b-visa__wrap
+  margin 0 0 40px 0
+  font-size 0
+.b-visa__img-wrap
+.b-visa__form
+  display inline-block
+  vertical-align top
+.b-visa__img-wrap
+  width 490px
+  margin 0 41px 0 0
+  padding 5px
+.b-visa__form
+  width 449px
+
+  /*блок b-tabs*/
+.b-tabs
+  background white
+.b-tabs__list
+  font-size 0
+.b-tabs__item
+  display inline-block
+  vertical-align top
+.b-tabs__link
+  display block
+  width 196px
+  height 40px
+  border-bottom 6px solid #ffffff
+  color #666666
+  font-size 15px
+  text-align center
+  line-height 40px
+  text-transform uppercase
+  text-decoration none
+.b-tabs__link_action
+  color #ffffff
+  background #ffba00
+  border-bottom 6px solid #ffba00
+.b-tabs__item:hover
+.b-tabs__item.active
+    .b-tabs__link
+      background #a7d8ec
+      border-bottom 6px solid #48aacf
+      color white
+.b-tabs__tab
+  padding 24px 20px 20px
+  font-size 0
+.b-tabs__inline
+  display inline-block
+  vertical-align top
+  font-size 16px
+.b-tabs__inline_left
+  width 294px
+  padding 9px 0 0 0
+  margin 0 37px 0 0
+.b-tabs__inline_right
+  width 607px
+.b-tabs__title
+.b-tabs__text
+  margin 0
+  font-size 15px
+.b-tabs__title
+  text-transform uppercase
+.b-tabs__text
+  margin 5px 0
+  color #474747
+
+
+/*блок b-country*/
+.b-country
+  padding 36px 4px
+.b-country__wrap
+  margin 0 0 0 -10px
+  font-size 0
+.b-country__nav
+  display inline-block
+  width 186px
+  margin 0 0 0 10px
+.b-country__title
+  margin 0 0 20px 0
+  background #ffc62e
+  color white
+  font-size 18px
+  text-transform uppercase
+  line-height 40px
+  text-align center
+.b-country__item
+  height 54px
+  margin 11px 0 0 0
+  &:first-child
+    margin 0
+.b-country__link
+  position relative
+  display block
+  height 100%
+  padding 0 5px 0 80px
+  background #71c3df
+  color #ffff
+  font-size 18px
+  font-weight bold
+  line-height 54px
+  text-transform uppercase
+  text-decoration none
+  &:hover
+    background #ffc62e
+.b-country__img-wrap
+  position absolute
+  width 60px
+  height 40px
+  top 7px
+  left 7px
+
+
+/*блок b-seotext*/
+.b-seotext
+  padding 10px 0

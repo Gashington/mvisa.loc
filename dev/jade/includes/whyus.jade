@@ -1,8 +1,9 @@
 .b-whyus
-    .b-whyus__decor.b-whyus__decor_top
+    if decor
+        .b-whyus__decor.b-whyus__decor_top
     .g-container
         .b-whyus__wrap
-            .g-title.g-title_arrow.g-title_blue почему выбирают нас?
+            h3.g-title.g-title_arrow.g-title_blue почему выбирают нас?
             ul.b-whyus__list.g-unstyled
                 li.b-whyus__option
                     .b-option
@@ -34,4 +35,5 @@
                         .b-option__icon.g-icon.g-icon_ic6
                         .b-option__title  Простота в заполнении
                         .b-option__text Простота оформления заявки, даёт вам возможность получить результат за коротное время...
-    .b-whyus__decor.b-whyus__decor_bottom
+    if decor
+        .b-whyus__decor.b-whyus__decor_bottom

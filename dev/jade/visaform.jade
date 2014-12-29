@@ -1,24 +1,11 @@
-doctype
-html.no-js
-    head
-        meta(charset='utf-8')
-        meta(http-equiv='X-UA-Compatible', content='IE=edge')
-        title
-        meta(name='description', content='')
-        meta(name='viewport', content='width=device-width, initial-scale=1')
-        link(href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css')
-        link(href='http://fonts.googleapis.com/css?family=PT+Sans:400italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css')
-        link(href='/css/normalize.css', rel='stylesheet')
-        link(href='/css/fancybox.css', rel='stylesheet')
-        link(href='/css/jquery.formstyler.css', rel='stylesheet')
-        link(href='/css/main.css', rel='stylesheet')
-        link(href='/css/widgets.css', rel='stylesheet')
-        script(src='javascripts/vendor/modernizr-2.7.1.min.js')
+extends ./layout.jade
+block body
     body
         .b-form
             .b-form__wrap
-                form.b-form__form
+                form.b-form__form#js-visaform
                     h3.b-form__title оставить заявку на оформление визы
+                    input(type='hidden', name='country')
                     .b-form__group
                         label.b-form__label(for='name') Ваше имя
                         input.b-form__itext(id='name', type='text', name='name')
@@ -28,22 +15,17 @@ html.no-js
                     .b-form__group
                         .b-form__group.b-form__group_inner
                             label.b-form__label.b-form__label_inline(for='single') Однократная:
-                                input.b-form__iradio.js-radio(id='single', type='radio', name='group' value='single')
+                                input.b-form__iradio.js-radio(id='single', type='radio', name='group' value='single' checked='checked')
                         .b-form__group.b-form__group_inner
                             label.b-form__label.b-form__label_inline(for='reusable') Многократная:
                                 input.b-form__iradio.js-radio(id='reusable', type='radio', name='group' value='reusable')
                     .b-form__group
                         .b-form__group.b-form__group_inner
                             label.b-form__label(for='count') Колличество персон:
-                        .b-form__group.b-form__group_inner
-                            span.b-form__spiner.b-form__spiner_left.js-plus -
-                            input.b-form__itext.b-form__itext_inline(id='count', type='text', name='count', value='1')
-                            span.b-form__spiner.b-form__spiner_right.js-plus +
+                        .b-form__group.b-form__group_inner.js-count-module
+                            span.b-form__spiner.b-form__spiner_left.js-spiner.js-minus -
+                            input.b-form__itext.b-form__itext_inline.js-num-input(id='count', type='text', name='count', value='1')
+                            span.b-form__spiner.b-form__spiner_right.js-spiner.js-plus +
                     .b-form__group.b-form__group_btns
-                        input.b-form__send(type='submit', value='Заказать звонок')
+                        input.b-form__send(type='submit', value='Заказать')
                 .b-form__plane
-    script(src="/js/vendor/jquery-1.11.1.js")
-    script(src="/js/vendor/fancybox.js")
-    script(src="/js/vendor/jquery.formstyler.js")
-    script(src="/js/main.js")
-    script(src="/js/plugins.js")

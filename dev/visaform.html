@@ -9,17 +9,18 @@
     <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=PT+Sans:400italic&amp;subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
     <link href="/css/normalize.css" rel="stylesheet">
-    <link href="/css/fancybox.css" rel="stylesheet">
     <link href="/css/jquery.formstyler.css" rel="stylesheet">
+    <link href="/css/fancybox.css" rel="stylesheet">
     <link href="/css/main.css" rel="stylesheet">
     <link href="/css/widgets.css" rel="stylesheet">
-    <script src="javascripts/vendor/modernizr-2.7.1.min.js"></script>
+    <script src="/js/vendor/modernizr-2.8.3.min.js"></script>
   </head>
   <body>
     <div class="b-form">
       <div class="b-form__wrap">
-        <form class="b-form__form">
+        <form id="js-visaform" class="b-form__form">
           <h3 class="b-form__title">оставить заявку на оформление визы</h3>
+          <input type="hidden" name="country">
           <div class="b-form__group">
             <label for="name" class="b-form__label">Ваше имя</label>
             <input id="name" type="text" name="name" class="b-form__itext">
@@ -31,7 +32,7 @@
           <div class="b-form__group">
             <div class="b-form__group b-form__group_inner">
               <label for="single" class="b-form__label b-form__label_inline">Однократная:
-                <input id="single" type="radio" name="group" value="single" class="b-form__iradio js-radio">
+                <input id="single" type="radio" name="group" value="single" checked="checked" class="b-form__iradio js-radio">
               </label>
             </div>
             <div class="b-form__group b-form__group_inner">
@@ -44,12 +45,12 @@
             <div class="b-form__group b-form__group_inner">
               <label for="count" class="b-form__label">Колличество персон:</label>
             </div>
-            <div class="b-form__group b-form__group_inner"><span class="b-form__spiner b-form__spiner_left js-plus">-</span>
-              <input id="count" type="text" name="count" value="1" class="b-form__itext b-form__itext_inline"><span class="b-form__spiner b-form__spiner_right js-plus">+</span>
+            <div class="b-form__group b-form__group_inner js-count-module"><span class="b-form__spiner b-form__spiner_left js-spiner js-minus">-</span>
+              <input id="count" type="text" name="count" value="1" class="b-form__itext b-form__itext_inline js-num-input"><span class="b-form__spiner b-form__spiner_right js-spiner js-plus">+</span>
             </div>
           </div>
           <div class="b-form__group b-form__group_btns">
-            <input type="submit" value="Заказать звонок" class="b-form__send">
+            <input type="submit" value="Заказать" class="b-form__send">
           </div>
         </form>
         <div class="b-form__plane"></div>
@@ -58,7 +59,12 @@
   </body>
   <script src="/js/vendor/jquery-1.11.1.js"></script>
   <script src="/js/vendor/fancybox.js"></script>
+  <script src="/js/vendor/easytabs.js"></script>
+  <script src="/js/vendor/jquery.validate.js"></script>
   <script src="/js/vendor/jquery.formstyler.js"></script>
   <script src="/js/main.js"></script>
   <script src="/js/plugins.js"></script>
+  <!--[if lt IE 10]-->
+  <script>(src="/js/vendor/jquery-placeholder.js")</script>
+  <!--[endif]-->
 </html>
